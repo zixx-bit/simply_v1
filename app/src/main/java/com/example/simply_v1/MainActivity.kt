@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         setContentView(R.layout.activity_main)
-
         println("onPause")
     }
 }
