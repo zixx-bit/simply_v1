@@ -7,9 +7,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-    override fun onStop() {
-        super.onStop()
+    override fun onStart() {
+        super.onStart()
         setContentView(R.layout.activity_main)
         println("onPause")
+
     }
 }
