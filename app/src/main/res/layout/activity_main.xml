@@ -9,60 +9,20 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edtFirstName"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="First name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/edtLastName"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:ellipsize="end"
+        android:lines="3"
+        android:text="Hey whats up? Hey whats up
+         Hey whats up Hey whats up Hey whats up Hey whats up Hey whats up"
+        android:textAlignment="center"
+<!--        use sp (scale pixels) instead of dp because sp resizes according to your phone screen size and type -->
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtLastName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Last name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/edtFirstName"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtBirtDate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Birth Date"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
-
-    <EditText
-        android:id="@+id/edtCountry"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Country"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/btnApply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtBirtDate" />
-
-    <Button
-        android:id="@+id/btnApply"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Apply"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/edtCountry"
-        app:layout_constraintTop_toBottomOf="@+id/edtBirtDate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
