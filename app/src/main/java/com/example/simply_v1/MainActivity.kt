@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             tvCount.text = "Lets count together: $count"
         }
     }
+
     override fun onStart() {
         super.onStart()
 
