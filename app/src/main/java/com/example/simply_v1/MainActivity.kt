@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
             val lastName = findViewById<EditText>(R.id.edtLastName).text.toString()
             val birthDate = findViewById<EditText>(R.id.edtBirtDate).text.toString()
             val country = findViewById<EditText>(R.id.edtCountry).text.toString()
-            Toast.makeText(this, "$firstName $lastName born on $birthDate from $country",Toast.LENGTH_SHORT).show()
+            Log.d("this", "$firstName $lastName born on $birthDate from $country")
+//            Toast.makeText(this, "$firstName $lastName born on $birthDate from $country",Toast.LENGTH_SHORT).show()
 
         }
     }
