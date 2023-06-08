@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -12,18 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnApply = findViewById<Button>(R.id.btnApply)
-
-
-        btnApply.setOnClickListener {
-
-            val firstName = findViewById<EditText>(R.id.edtFirstName).text.toString()
-            val lastName = findViewById<EditText>(R.id.edtLastName).text.toString()
-            val birthDate = findViewById<EditText>(R.id.edtBirtDate).text.toString()
-            val country = findViewById<EditText>(R.id.edtCountry).text.toString()
-            Log.d("this", "$firstName $lastName born on $birthDate from $country")
-//            Toast.makeText(this, "$firstName $lastName born on $birthDate from $country",Toast.LENGTH_SHORT).show()
-
+        val btnCount = findViewById<Button>(R.id.btnCount)
+        val tvCount = findViewById<TextView>(R.id.tvCount)
+            var count = 0
+        btnCount.setOnClickListener {
+            count++
+            tvCount.text = "Lets count together: $count"
         }
     }
     override fun onStart() {
