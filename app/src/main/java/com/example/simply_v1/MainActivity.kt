@@ -2,6 +2,7 @@ package com.example.simply_v1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -14,23 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnAdd = findViewById<Button>(R.id.btnAdd)
-        var tvResult = findViewById<TextView>(R.id.tvResult)
-        var firstNumber = findViewById<EditText>(R.id.etFirstNumber)
-        var secondNumber = findViewById<EditText>(R.id.etSecondNumber)
-//
 
         btnAdd.setOnClickListener {
-            firstNumber.text
-            secondNumber.text
-//           var result = firstNumber + secondNumber
-            tvResult.text = " ${firstNumber} + "
+            var tvResult = findViewById<TextView>(R.id.tvResult)
+            var firstNumber = findViewById<EditText>(R.id.etFirstNumber).text.toString().toInt()
+            var secondNumber = findViewById<EditText>(R.id.etSecondNumber).text.toString().toInt()
 
+           var result = firstNumber + secondNumber
+            tvResult.text = result.toString()
 
         }
-//        btnCount.setOnClickListener {
-//            count++
-//            tvCount.text = "Lets count together: $count"
-//        }
     }
 
     override fun onStart() {
@@ -39,3 +33,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+

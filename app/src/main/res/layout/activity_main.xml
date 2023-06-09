@@ -11,11 +11,11 @@
 
     <EditText
         android:id="@+id/etFirstNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="First Number"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/etSecondNumber"
         app:layout_constraintHorizontal_bias="0.5"
@@ -25,11 +25,11 @@
 
     <EditText
         android:id="@+id/etSecondNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Second Number"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -52,7 +52,7 @@
         android:text="Result"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintStart_toEndOf="@+id/etFirstNumber"
         app:layout_constraintTop_toBottomOf="@+id/etSecondNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
