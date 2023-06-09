@@ -13,13 +13,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnCount = findViewById<Button>(R.id.btnCount)
-        val tvCount = findViewById<TextView>(R.id.tvCount)
-            var count = 0
-        btnCount.setOnClickListener {
-            count++
-            tvCount.text = "Lets count together: $count"
+        val btnAdd = findViewById<Button>(R.id.btnAdd)
+        var tvResult = findViewById<TextView>(R.id.tvResult)
+        var firstNumber = findViewById<EditText>(R.id.etFirstNumber)
+        var secondNumber = findViewById<EditText>(R.id.etSecondNumber)
+//
+
+        btnAdd.setOnClickListener {
+            firstNumber.text
+            secondNumber.text
+//           var result = firstNumber + secondNumber
+            tvResult.text = " ${firstNumber} + "
+
+
         }
+//        btnCount.setOnClickListener {
+//            count++
+//            tvCount.text = "Lets count together: $count"
+//        }
     }
 
     override fun onStart() {
