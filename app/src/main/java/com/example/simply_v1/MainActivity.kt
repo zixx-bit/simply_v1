@@ -14,17 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnAdd = findViewById<Button>(R.id.btnAdd)
-
-        btnAdd.setOnClickListener {
-            var tvResult = findViewById<TextView>(R.id.tvResult)
-            var firstNumber = findViewById<EditText>(R.id.etFirstNumber).text.toString().toInt()
-            var secondNumber = findViewById<EditText>(R.id.etSecondNumber).text.toString().toInt()
-
-           var result = firstNumber + secondNumber
-            tvResult.text = result.toString()
-
-        }
     }
 
     override fun onStart() {
