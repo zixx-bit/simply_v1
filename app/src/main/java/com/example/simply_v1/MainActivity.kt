@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         var imageV  = findViewById<ImageView>(R.id.imageView)
 
         btnAddImage.setOnClickListener {
-            imageV.setImageResource(R.drawable.edd)
+            imageV.setImageResource(R.drawable.ic_launcher)
         }
 
     }
