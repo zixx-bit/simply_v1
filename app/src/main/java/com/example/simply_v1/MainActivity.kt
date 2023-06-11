@@ -15,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnOrder = findViewById<Button>(R.id.btnOrder)
+
+        btnOrder.setOnClickListener {
+
+        }
 
     }
 
