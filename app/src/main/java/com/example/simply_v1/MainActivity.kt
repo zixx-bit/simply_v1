@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnAddImage = findViewById<Button>(R.id.btnAddImage)
-        var imageV  = findViewById<ImageView>(R.id.imageView)
-
-        btnAddImage.setOnClickListener {
-            imageV.setImageResource(R.drawable.ic_launcher)
-        }
+//        val btnAddImage = findViewById<Button>(R.id.btnAddImage)
+//        var imageV  = findViewById<ImageView>(R.id.imageView)
+//
+//        btnAddImage.setOnClickListener {
+//            imageV.setImageResource(R.drawable.ic_launcher)
+//        }
 
     }
 
