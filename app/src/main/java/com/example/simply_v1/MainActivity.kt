@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
@@ -20,11 +21,19 @@ class MainActivity : AppCompatActivity() {
         val btnOrder = findViewById<Button>(R.id.btnOrder)
 
         btnOrder.setOnClickListener {
-            val rgMeat = findViewById<RadioGroup>(R.id.rgMeat).checkedRadioButtonId
+            val rgMeat = findViewById<RadioGroup>(R.id.rgMeat)
+            val checkedMeatRadioButtonId = rgMeat.checkedRadioButtonId
+            val meat = findViewById<RadioButton>(checkedMeatRadioButtonId)
             val cheese = findViewById<CheckBox>(R.id.cbCheese).isChecked
             val onions = findViewById<CheckBox>(R.id.cbOnions).isChecked
             val salad = findViewById<CheckBox>(R.id.cbSalad).isChecked
-
+            val orderString = "You ordered a burger with :\n" +
+                    "${meat.text}" +
+                    (if (cheese)" \n Cheese" else "") +
+                    (if (onions) " \n Onions" else "") +
+                    (if (salad) " \n salad" else "")
+            val tvOrder = findViewById<TextView>(R.id.tvOrder)
+            tvOrder.text = orderString
         }
 
     }
