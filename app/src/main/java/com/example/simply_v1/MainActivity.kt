@@ -22,14 +22,8 @@ class MainActivity : AppCompatActivity() {
         btnOrder.setOnClickListener {
             val rgMeat = findViewById<RadioGroup>(R.id.rgMeat).checkedRadioButtonId
             val cheese = findViewById<CheckBox>(R.id.cbCheese).isChecked
-            val onions = findViewById<CheckBox>(R.id.cbOnions)
-            val salad = findViewById<CheckBox>(R.id.cbSalad)
-            val checkedMeatButtonId = rgMeat.checkedRadioButtonId
-
-
-                cheese.isChecked
-                onions.isChecked
-                salad.isChecked
+            val onions = findViewById<CheckBox>(R.id.cbOnions).isChecked
+            val salad = findViewById<CheckBox>(R.id.cbSalad).isChecked
 
         }
 
