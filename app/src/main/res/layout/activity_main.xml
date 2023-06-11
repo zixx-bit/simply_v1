@@ -9,26 +9,55 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="what do you want to eat?"
+       android:textSize="26sp"
+      />
 
-    <Button
-        android:id="@+id/btnAddImage"
+    <RadioGroup
+        android:id="@+id/rgMeat"
+        android:layout_width="214dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken" />
+
+        <RadioButton
+            android:id="@+id/rbBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef" />
+
+        <RadioButton
+            android:id="@+id/rbPork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pork" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="wrap_content"
+        android:text="Cheese"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cbOnions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Image"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:text="Onions"/>
+    <CheckBox
+        android:id="@+id/cbSalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
