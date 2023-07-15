@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             val cheese = findViewById<CheckBox>(R.id.cbCheese).isChecked
             val onions = findViewById<CheckBox>(R.id.cbOnions).isChecked
             val salad = findViewById<CheckBox>(R.id.cbSalad).isChecked
-            val orderString = "You ordered a burger with :\n" +
+            val orderString = "You ordered a burger with :\n" + 
                     "${meat.text}" +
                     (if (cheese)" \n Cheese" else "") +
                     (if (onions) " \n Onions" else "") +
