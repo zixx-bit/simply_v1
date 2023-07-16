@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             val tvOrder = findViewById<TextView>(R.id.tvOrder)
             tvOrder.text = orderString
         }
-
     }
 
 }
