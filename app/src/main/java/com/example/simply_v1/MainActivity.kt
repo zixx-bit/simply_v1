@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 //            Toast.makeText(this, "I am a toast", LENGTH_SHORT).show()
             Toast(this).apply {
                 duration = LENGTH_LONG
-                view = layoutInflater.inflate(R.layout.custom_toast,null)
+                view = layoutInflater.inflate(R.layout.custom_toast,  null)
 
                 show()
             }
