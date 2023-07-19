@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnToat = findViewById<Button>(R.id.btnToast)
-
         btnToat.setOnClickListener {
 //            Toast.makeText(this, "I am a toast", LENGTH_SHORT).show()
             Toast(this).apply {
