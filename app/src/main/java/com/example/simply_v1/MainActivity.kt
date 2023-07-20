@@ -1,5 +1,6 @@
 package com.example.simply_v1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -22,14 +23,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnToat = findViewById<Button>(R.id.btnToast)
-        btnToat.setOnClickListener {
-//            Toast.makeText(this, "I am a toast", LENGTH_SHORT).show()
-            Toast(this).apply {
-                duration = LENGTH_LONG
-                view = layoutInflater.inflate(R.layout.custom_toast,  null)
-
-                show()
+        val btnActivity = findViewById<Button>(R.id.btnSecondActivity)
+            btnActivity.setOnClickListener {
+                Intent =
             }
         }
 
